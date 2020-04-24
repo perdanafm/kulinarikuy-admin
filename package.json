@@ -1,59 +1,59 @@
 {
-  "name": "react-admin-firebase",
-  "description": "A firebase data provider for the React Admin framework",
-  "version": "3.1.6",
-  "peerDependencies": {
-    "firebase": "^7.9.x",
-    "react": "^16.x",
-    "react-admin": "^3.x",
-    "react-dom": "^16.x"
+  "name": "react-material-dashboard",
+  "author": "DeviasIO",
+  "email": "contact@devias.io",
+  "licence": "MIT",
+  "version": "0.3.0",
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
-    "path-browserify": "^1.0.0",
-    "rxjs": "^6.5.x"
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.2.1",
+    "chart.js": "^2.8.0",
+    "clsx": "^1.0.4",
+    "firebase": "^7.14.2",
+    "history": "^4.9.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.6",
+    "react-perfect-scrollbar": "^1.5.3",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "recompose": "^0.30.0",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.2",
+    "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "@firebase/app-types": "^0.3.9",
-    "@firebase/auth-types": "^0.6.0",
-    "@firebase/firestore-types": "1.2.0",
-    "@firebase/testing": "^0.19.1",
-    "@firebase/util": "^0.2.11",
-    "@types/firebase": "^3.2.1",
-    "@types/jest": "^24.0.13",
-    "@types/node": "^10.9.4",
-    "@types/react": "^16.8.13",
-    "@types/rx": "^4.1.1",
-    "cpx": "^1.5.0",
-    "del": "^3.0.0",
-    "firebase": "^7.9.1",
-    "firebase-tools": "^8.1.1",
-    "gulp": "^3.9.1",
-    "gulp-sequence": "^1.0.0",
-    "jest": "^23.6.0",
-    "microbundle": "^0.11.0",
-    "ts-jest": "^25",
-    "tslint": "^5.16.0",
-    "typescript": "^3.0.3"
-  },
-  "homepage": "https://github.com/benwinding/react-admin-firebase",
-  "email": "hello@benwinding.com",
-  "license": "MIT",
-  "scripts": {
-    "build": "rm -rf dist && microbundle",
-    "watch": "microbundle watch",
-    "start-demo": "gulp start-demo",
-    "start-emulator": "yarn firebase emulators:start --only firestore",
-    "test": "yarn firebase emulators:exec \"yarn jest --forceExit --detectOpenHandles\"",
-    "test-watch": "yarn firebase emulators:exec \"yarn jest --watchAll --detectOpenHandles\""
-  },
-  "files": [
-    "dist",
-    "src",
-    "LICENSE",
-    "README.md"
-  ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "umd:main": "dist/index.umd.js",
-  "source": "src/index.ts"
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.17.1",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "typescript": "^3.5.1"
+  }
 }
