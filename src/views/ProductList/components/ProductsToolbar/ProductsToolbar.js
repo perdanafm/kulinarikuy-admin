@@ -116,7 +116,7 @@ const ProductsToolbar = props => {
             setSubmit(false)
             setOpen(false)
             resetAll()
-        
+            setProgress(0)
           })
       }
     )
@@ -175,7 +175,11 @@ const ProductsToolbar = props => {
                 {...bindPrice}
               />
               <span style={{ inlineSize: '-webkit-fill-available', float:'left' }}>File</span>
-              <input type="file" onChange={handleChange} style={{ float: 'left' }} />
+              <input 
+                onChange={handleChange} 
+                style={{ float: 'left' }} 
+                type="file"
+              />
               <progress
                 className={classes.progress}
                 max="100"

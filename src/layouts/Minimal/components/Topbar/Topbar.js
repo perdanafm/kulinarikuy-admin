@@ -8,6 +8,11 @@ import { AppBar, Toolbar } from '@material-ui/core';
 const useStyles = makeStyles(() => ({
   root: {
     boxShadow: 'none'
+  },
+  header:{
+    fontSize: '1.5rem',
+    color: 'white',
+    fontFamily: 'Raleway, Arial'
   }
 }));
 
@@ -24,11 +29,8 @@ const Topbar = props => {
       position="fixed"
     >
       <Toolbar>
-        <RouterLink to="/">
-          <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          />
+        <RouterLink className={classes.header} to="/">
+          Dashboard KulinariKuy
         </RouterLink>
       </Toolbar>
     </AppBar>
