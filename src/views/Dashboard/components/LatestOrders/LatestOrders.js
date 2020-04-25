@@ -18,7 +18,6 @@ import {
 } from '@material-ui/core';
 
 import mockData from './data';
-import { StatusBullet } from 'components';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -39,12 +38,6 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'flex-end'
   }
 }));
-
-const statusColors = {
-  delivered: 'success',
-  pending: 'info',
-  refunded: 'danger'
-};
 
 const LatestOrders = props => {
   const { className, ...rest } = props;
@@ -80,7 +73,6 @@ const LatestOrders = props => {
                       </TableSortLabel>
                     </Tooltip>
                   </TableCell>
-                  <TableCell>Status</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -93,16 +85,6 @@ const LatestOrders = props => {
                     <TableCell>{order.customer.name}</TableCell>
                     <TableCell>
                       {moment(order.createdAt).format('DD/MM/YYYY')}
-                    </TableCell>
-                    <TableCell>
-                      <div className={classes.statusContainer}>
-                        <StatusBullet
-                          className={classes.status}
-                          color={statusColors[order.status]}
-                          size="sm"
-                        />
-                        {order.status}
-                      </div>
                     </TableCell>
                   </TableRow>
                 ))}
